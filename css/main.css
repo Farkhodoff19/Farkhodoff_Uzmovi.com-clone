@@ -1,0 +1,269 @@
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+
+body {
+     font-family: sans-serif;
+     background-color: #000;
+}
+
+.header {
+     padding: 10px 0px;
+}
+
+.navbar-brand {
+     font-size: 40px;
+     font-weight: 200;
+}
+
+.header__span {
+     color: dodgerblue;
+     font-weight: 600;
+}
+
+.navbar-nav {
+     display: flex;
+     align-items: center;
+     margin-left: 70px;
+}
+
+.nav-link {
+     padding: 0px 0px 5px 0px;
+     margin-left: 40px;
+     border-bottom: 2px solid transparent;
+     font-size: 16px;
+     color: #fff;
+     transition: 0.6s;
+}
+
+.nav-link:hover {
+     border-bottom: 2px solid dodgerblue;
+}
+
+.form-control {
+     border: none;
+     border-bottom: 1px solid dodgerblue;
+     background-color: transparent;
+}
+
+.hero {
+     background-image: url("../img/unsplash.jpg");
+     background-repeat: no-repeat;
+     background-size: cover;
+}
+
+.hero__box {
+     padding: 150px 0px 200px 30px;
+}
+
+.hero__header {
+     margin-bottom: 25px;
+     width: 350px;
+     font-size: 35px;
+     font-weight: 600;
+     color: #fff;
+}
+
+.hero__desc {
+     margin-bottom: 25px;
+     width: 450px;
+     color: rgba(255, 255, 255, 0.562);
+}
+
+.hero__link {
+     display: inline-block;
+     padding: 10px 35px;
+     font-size: 20px;
+     font-weight: 600;
+     color: #fff;
+     border: 1px solid transparent;
+     border-radius: 5px;
+     text-transform: uppercase;
+     text-decoration: none;
+     background-color: #FFDA18;
+     transition: 0.5s;
+}
+
+.hero__link:hover {
+     color: #fff;
+     border: 1px solid #FFDA18;
+     background-color: transparent;
+}
+
+.movie__header {
+     margin: 30px 0px 100px 0px;
+     color: #fff;
+     font-size: 30px;
+     text-align: center;
+}
+
+.movie__list {
+     display: flex;
+     flex-wrap: wrap;
+     list-style: none;
+     margin: -20px;
+}
+
+.movie__item {
+     position: relative;
+     top: 0;
+     padding: 180px 10px 20px 20px;
+     margin: 15px;
+     margin-top: 70px;
+     width: 250px;
+     min-height: 250px;
+     border-radius: 15px;
+     background-color: #050E12;
+     cursor: pointer;
+     transition: all 0.3s ease-in-out;
+}
+
+.movie__item:hover {
+     top: -10px;
+     box-shadow: rgba(247, 249, 252, 0.411) 0px 2px 8px 0px;
+}
+
+.movie__img {
+     position: absolute;
+     width: 200px;
+     height: 200px;
+     object-fit: cover;
+     top: -55px;
+     left: 24px;
+     border-radius: 15px;
+}
+
+.movie__item--header {
+     color: #B6B6B6;
+     text-align: left;
+}
+
+.movie__item--year {
+     color: #B6B6B6;
+     margin-bottom: 0px !important;
+}
+
+.movie__over {
+     display: none;
+     position: fixed;
+     top: 0px;
+     left: 0px;
+     width: 100%;
+     height: 100vh;
+     background-color: rgba(0, 0, 0, 0.151);
+     z-index: 1;
+}
+
+.movie__panel {
+     margin: 0 auto;
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     z-index: 10;
+     padding: 30px;
+     width: 700px;
+     min-height: 350px;
+     border-radius: 15px;
+     background-color: #000;
+     box-shadow: rgba(228, 222, 222, 0.1) 0px 4px 12px;
+}
+
+.close-btn {
+     position: absolute;
+     right: 15px;
+     top: 15px;
+     width: 25px;
+     height: 25px;
+     border: none;
+     background-color: transparent;
+     background-image: url("../img/icons8-close\ \(1\).svg");
+     background-size: cover;
+     transition: 0.6s;
+}
+
+.close-btn:hover {
+     transform: scale(1.2);
+     opacity: 0.8;
+}
+
+.close-btn:active {
+     opacity: 0.5;
+}
+
+.movie__panel-img {
+     width: 250px;
+     height: 200px;
+     margin-right: 30px;
+     border-radius: 10px;
+     transition: 0.6s;
+}
+
+.movie__panel-img:hover {
+     transform: scale(1.05);
+}
+
+.movie__panel-box {
+     display: flex;
+     margin-bottom: 20px;
+}
+
+.movie__panel-box2 {
+     align-self: flex-end;
+}
+
+.movie__panel-header {
+     margin-bottom: 10px;
+     color: #fff;
+     font-size: 25px;
+     font-weight: 600;
+}
+
+.movie__panel-box3 {
+     display: flex;
+     align-items: center;
+}
+
+.movie__reting {
+     position: relative;
+     margin-left: 25px;
+     margin-bottom: 0px;
+     color: #fff;
+     font-size: 20px;
+     font-weight: 600;
+}
+
+.movie__reting::after {
+     position: absolute;
+     left: -25px;
+     top: 5px;
+     content: '';
+     width: 20px;
+     height: 20px;
+     background-image: url("../img/icon-zvezd.svg");
+     background-size: cover;
+}
+
+.movie__link {
+     padding: 5px 25px;
+     margin-left: 20px;
+     color: #000;
+     text-decoration: none;
+     border: 1px solid transparent;
+     border-radius: 5px;
+     background-color: #FFDA18;
+     transition: 0.5s;
+}
+
+.movie__link:hover {
+     color: #fff;
+     border: 1px solid #FFDA18;
+     background-color: transparent;
+}
+
+.info {
+     width: 500px;
+     color: rgba(255, 255, 255, 0.644);
+}
